@@ -4,8 +4,8 @@ import 'package:foodpin/common/view/splash_screen.dart';
 
 void main() {
   runApp(
-    ProviderScope(
-      child: const _App(),
+    const ProviderScope(
+      child: _App(),
     ),
   );
 }
@@ -18,7 +18,7 @@ class _App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'NotoSans'),
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
